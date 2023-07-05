@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,400;1,500&display=swap');
+
+:root{
+    --pink:#F28482;
+    --babypink:#F8C1CC;
+}
+
+
+
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
+}
+
+html::-webkit-scrollbar{
+    width:1.4rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+html::-webkit-scrollbar-track{
+    background:#F7EDE2;
+    font-family: 'Poppins', sans-serif;
+}
+
+html::-webkit-scrollbar-thumb{
+    background:var(--pink);
+    font-family: 'Poppins', sans-serif;
+}
+
+#map { 
+    width: 1000px; 
+    height: 580px; 
+}
+
+.center {
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
+
+.button {
+font-family: 'Poppins', sans-serif;
+padding:.3rem 3rem;
+background:#F8C1CC;
+cursor: pointer;
+margin-top: 1rem;
+display: block;
+margin-left: auto;
+margin-right: auto;
+border-radius: 5rem;
+}
+
+.button:hover{
+    background:var(--pink);
+}
+
+.button1 {
+    font-family: Arial, Helvetica, sans-serif;
+    padding:.2rem 2rem;
+    background:#F8C1CC;
+    color: #09644C;
+    cursor: pointer;
+    margin-top: 1rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5rem;
+    }
+
+.button1:hover{
+    background:var(--pink);
+}
+
+section{
+    min-height: 100vh;
+    padding:1rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.btn{
+    font-family: 'Poppins', sans-serif;
+    padding:.7rem 3rem;
+    background:#F8C1CC;
+    color:#09644C;
+    cursor: pointer;
+    margin-top: 1rem;
+    font-size: 2rem;
+    border-radius: 5rem;
+}
+
+.btn i{
+    padding:0 .5rem;
+    font-size: 1.8rem;
+}
+
+.btn:hover{
+    background:var(--pink);
+}
+
+.heading{
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    margin:0 6rem;
+    font-size: 4rem;
+    padding:1rem;
+    border-bottom: .2rem solid #09644C;
+    color:#09644C;
+}
+
+.heading span{
+    color:var(--pink);
+}
+
+.border {
+    border-radius: 25px;
+    background:#44281D;
+    opacity: .75; 
+    width: 100%;
+    padding: 20px;
+}
+
+header{
+    font-family: 'Poppins', sans-serif;
+    position: fixed;
+    top:0; left:0;
+    z-index: 1000;
+    height:100%;
+    width:25rem;
+    background:#09644C;
+    display: flex;
+    flex-flow: column;
+}
+
+header .intro img{
+    height:20rem;
+    width:20rem;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    border:.7rem solid var(--babypink);
+}
+
+header .intro .name{
+    font-size: 2rem;
+    color:#F7EDE2;
+}
+
+header .intro .post{
+    font-style: italic;
+    font-size: 1rem;
+    color:#F7EDE2;
+}
+
+header .navbar{
+    width:100%;
+}
+
+header .navbar ul{
+    list-style: none;
+    padding:1rem 3rem;
+}
+
+
+header .navbar ul li a{
+    display: block;
+    padding:1rem;
+    margin:1.5rem 0;
+    background:#F8C1CC;
+    color:#09644C;
+    font-size: 1.5rem;
+    border-radius: 5rem;
+    font-weight: '500';
+}
+
+header .navbar ul li a:hover{
+    background:var(--pink);
+}
+
+.home h3{
+    font-size: 2.5rem;
+    color:#F28482;
+}
+
+.home h1{
+    font-size:5rem;
+    color:#F28482;
+}
+
+.home h1 span{
+    color:#F7EDE2;
+}
+
+.home p{
+    font-size:2rem;
+    color:#F28482;
+    padding: 1rem 0;
+}
+
+.home p span{
+    font-size:2rem;
+    color:#F7EDE2;
+    padding: 1rem 0;
+}
+
+.]
+
+/* media queries  */
+
+@media (max-width:1200px){
+
+    html{
+        font-size: 55%;
+    }
+
+    .home{
+        padding:1rem 4rem;
+    }
+
+}
+
+@media (max-width:991px){
+
+   header{
+       left:-120%;
+   }
+
+   #menu{
+       display: block;
+   }
+
+   header.toggle{
+    left:0%;
+   }
+
+   body{
+       padding:0;
+   }
+
+}
+
+@media (max-width:768px){
+
+    html{
+        font-size: 50%;
+    }
+ 
+ }
+
+@media (max-width:400px){
+
+    header{
+        width: 100vw;
+    }
+
+    .heading{
+        margin:0 3rem;
+    }
+
+    .about .row .counter .box{
+        width: 100%;
+    }
+ 
+    .resume .box-container .box{
+        width:100%;
+    }
+
+    .portfolio .box-container .box{
+        width:100%;
+    }
+
+    .contact .row form{
+        margin:3rem 0;
+    }
+
+ }
